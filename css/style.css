@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  min-height: 400px;
+}
+.header{
+        width: 95%;
+        height: 100%;
+        margin:0 auto;
+      }
+
+      .searchlorem{
+        width:80%;
+        margin:0 auto;
+        border: 2px solid #eee;
+        padding:20px;
+        margin-top: 50px;
+      }
+      
+      .slider{
+        width: 100%;
+        height: 300px;
+      }
+      .checkinput{
+        height: 40px;
+        margin-bottom: 10px;
+      }
+      .marginbottomer{
+        margin-bottom: 12px;
+        border: 1px solid #eee;
+      }
+      li{
+        list-style-type: none;
+      }
+      .hoverbrown:hover{
+        background-color: #1976D2 !important;
+        color: white !important;
+      }
+      nav.nav-center ul li{
+        float: none;
+        display: inline-block;
+      }
+      nav.nav-center ul{
+        text-align:center;
+      }
+      .smally a:hover{
+        background-color: #1976D2;
+        color: white !important;
+      }
+      .imgstyle{
+        width: 100% !important;
+        height: 200px !important;
+      }
+      .takecharge{
+        width: 100% !important;
+        height: 100% !important;
+      }
+      .signin{
+        width: 50%;
+        margin:0 auto;
+        border: 2px solid #eee;
+        padding:20px;
+        margin-top: 50px;
+      }
+      
+      /*blog styling*/
+      .imguser{
+        width: 60% !important;
+        height: 100px !important;
+      }
+      .popularposts{
+        width: 80% ! important;
+        height: 100px !important;
+      }
+
+     @media only screen and (max-width: 412px){
+      .smally{
+        margin-top: -8px;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .changemargin{
+        padding: 5px !important;
+      }
+    }
+    @media only screen and (max-width: 730px){
+      .hider{
+        display: none !important;
+      }
+      .searchlorem{
+        width: 100%;
+      }
+      .signin{
+        width: 90%;
+      }
+      .fullwidth{
+        width: 100% !important;
+      }
+      .collection-item{
+        font-size: .5em;
+      }
+      .changefont{
+        font-size: 1em;
+      }
+    }
+
+
+.alert,.navbar-fixed,nav,main,footer{
+        display: none;
+      }
