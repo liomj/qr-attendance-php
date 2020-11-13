@@ -61,7 +61,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `fullname`, `password`, `email`, `department`) VALUES
-(1, 'Admin', 'fe703d258c7ef5f50b71e06565a65aa07194907f', '.admin@gmail.com', 'Electronic Engineering');
+(1, 'Admin', '6c0babd55d2c4da19a8e7ea36169e7ba012b02ca', 'admin@gmail.com', 'Electronic Engineering');
 
 -- --------------------------------------------------------
 
@@ -77,7 +77,13 @@ CREATE TABLE `attendance` (
   `qrtime` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `attendance`
+--
 
+INSERT INTO `attendance` (`attendance_id`, `student_reg_no`, `course_code`, `date`, `qrtime`) VALUES
+(12, '187238', 'ECE573', '1533629108', '1533629070'),
+(15, '188433', 'ECE571', '1533731484', '1533730792');
 
 -- --------------------------------------------------------
 
@@ -123,6 +129,14 @@ CREATE TABLE `students` (
   `email` varchar(255) DEFAULT NULL,
   `phone` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`id`, `fullname`, `reg_no`, `department`, `password`, `email`, `phone`) VALUES
+(18, 'Student 1', '2013/188433', 'Electronic Engineering', '5e9ac2083e64e4f62ed39f30135a46e31ddd8a7f', 'student1@gmail.com', '0810002002020'),
+(21, 'Studden 2', '2013/187238', 'Electronic Engineering', 'e63e6ab389ad6a255bdb1e3bfa55884ffcab5b45', 'student2@gmail.com', '1234567876'),;
 
 
 --
